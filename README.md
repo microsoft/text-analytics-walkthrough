@@ -5,7 +5,7 @@ This Read Me and its accompanying Jupyter Notebook provides instructions, code, 
 
 The notebook provides context about the Cognitive Services Python SDK and troubleshooting information so you can take what you've learned and apply it to your own needs! 
 
-* Read Time: 20 min
+* Read Time: 10 min
 * Build Time: 20 - 30 min
 
 **Why is this helpful?** 
@@ -18,11 +18,13 @@ Doing this kind of text analysis can reduce time and energy required to understa
 * Social media comment analysis 
 
 ### Cost Overview
-Costs specific to running Cognitive Services Text Analytics are small (<$1), with the bulk of the cost resulting from the use of virtual machines. To reduce cost, do functionality checks and debugging locally. 
+Costs resulting from using Cognitive Services Text Analytics are low (<$1). However, using virtual machines (VMs) can increase costs dramatically (between $50 and $75 per month). 
 
-When you're done with analysis, stop the Compute engine and delete the resource group.
+To keep the cost of this example as low as possible, we'll run the Cognitive Services client and all of our code locally using [VS Code](https://code.visualstudio.com/Download) and the Python extension. 
 
-* **Estimated cost for running this notebook:** <$5
+To avoid any surprise costs in the future, when you're done with analysis, remember to **stop the Compute engine and delete the resource group.**
+
+* **Estimated cost for running this example:** <$3
 
 * **Estimated cost for doing your own analysis:** <$10
 
@@ -31,6 +33,11 @@ When you're done with analysis, stop the Compute engine and delete the resource 
 * TextFiles folder: Sample text files for you to run
 * Images: Screenshots and other supporting images for the Jupyter notebook.
 
+## Prior Knowledge
+This tutorial assumes you have some knowledge of VS Code, Python, and Jupyter Notebooks. New to these things? No problem! Check out the resources below:
+1. [Setting up VS Code](https://code.visualstudio.com/docs/setup/setup-overview)
+1. [Getting started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
+1. [Using Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/python/jupyter-support)
 
 ## Setting up Azure Cognitive Services
 If you're new to Cognitive Services, here's what you'll need to do to get set up.
@@ -79,33 +86,10 @@ If you don't already have one, use the following steps to create a Cognitive Ser
 
 3. Deployment will take a few minutes, but that's okay! We won't need it just yet. Onward to the next step!
 
-## Step 4: Download and import this notebook into Azure Machine Learning Studio.
-You can either download or clone this GitHub repo to your computer and upload into the Machine Learning ("ML") Studio, or follow the steps to clone directly into ML Studio:
-
-1. In ML Studio, navigate to the Notebooks page (under Author). 
-
-2. Under My files, use the 🗋 button to create a new file with the following settings:
-    * **File location:** Users/your user name
-    * **File name:** Get-Files
-    * **File type:** Notebook
-    * **Overwrite if already exists:** Selected
-
-3. When the notebook has been created, check that the compute instance you created is selected in the **Compute** box, and that its status is **Running**. Then, in the blank cell at the top of the notebook, paste the following code:
-
-    ```!git clone https://github.com/jenfoxbot/text-analytics-walkthrough.git```
-
-4. Click the ▷ button next to the cell to run the code in the cell. This will clone the repository files from GitHub.
-
-5. When the code has finished running, use the ↻ button under My files to refresh the folder view. Verify that a folder named **text-analytics-walkthrough** has been created. This folder contains the Juypyter notebook and other files you'll need in this walkthrough.
-
-6. Close the Get-Files.ipynb notebook tab (click the "X" at the top of the notebook view).
-
-## Step 5: Open the text-analytics-walkthrough notebook and run through the code!
-You're nearly ready to tackle text analytics! 
+## Step 4: Open the text-analytics-walkthrough notebook in VS Code and run through the code blocks!
 
 1. Open the *text-analytics-notebook.ipynb* notebook in the **text-analytics-walkthrough** folder. 
-    If you're using the notebook editor in Azure Machine Learning studio, use the ≪ button to collapse the file explorer pane and give you more room to focus on the notebook tab.
-2. Read through the notebook and run the code cells as you go.
+2. Read through the notebook and run the code blocks as you go.
 
 ## Aside: Tracking expenses and setting a budget
 
@@ -114,7 +98,8 @@ You're nearly ready to tackle text analytics!
 3. In the new window, select the **"Cost analysis"** section (under "Cost management" on the left-hand side). 
 There you can see a cost breakdown of each service as well as forecasted costs.
 4. You can also set a budget by clicking on the "Budget" drop-down and selecting "Create a new budget". 
-    *Note that this will send you an e-mail alert when you are close to your budget limit, it will not stop services.*
+
+    *Note that this will send you an e-mail alert when you are close to your budget limit, it **will not stop the services.***
 
 ## Contributing
 
