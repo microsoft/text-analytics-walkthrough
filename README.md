@@ -18,15 +18,11 @@ Doing this kind of text analysis can reduce time and energy required to understa
 * Social media comment analysis 
 
 ### Cost Overview
-Costs resulting from using Cognitive Services Text Analytics are low (<$1). However, using virtual machines (VMs) can increase costs dramatically (between $50 and $75 per month). 
+Cognitive Services Text Analytics offers a free tier that include up to 5000 tansactions per month. However, using virtual machines (VMs) can incur signifcant costs (between $50 and $75 per month). 
 
 To keep the cost of this example as low as possible, we'll run the Cognitive Services client and all of our code locally using [VS Code](https://code.visualstudio.com/Download) and the Python extension. 
 
 To avoid any surprise costs in the future, when you're done with analysis, remember to **delete the resource group.**
-
-* **Estimated cost for running this example:** <$3
-
-* **Estimated cost for doing your own analysis:** <$10
 
 ### What's in the repo:
 * text-analytics-notebook.ipynb: A Jupyter notebook that contains explanatory text and code blocks that will walk you through setting up and using Azure Cognitive Services
@@ -43,15 +39,15 @@ This tutorial assumes you have some knowledge of VS Code, Python, and Jupyter No
 If you're new to Cognitive Services, here's what you'll need to do to get set up.
 You will need a Microsoft Azure subscription. you do not already have one, set up a Microsoft Azure subscription. You can sign up for a free trial at: https://azure.microsoft.com/free 
 
-## Step 1: Set up an Azure Cognitive Services resource
+## Step 1: Set up an Azure Text Analytics resource
 If you don't already have one, use the following steps to create a Cognitive Services resource in your Azure subscription:
 
 1. In another browser tab, open the Azure portal at: https://portal.azure.com
-1. Click the **＋Create a resource button**, search for Cognitive Services, and create a Cognitive Services resource with the following settings:
+1. Click the **＋Create a resource button**, search for Text Analytics, and create a Cognitive Services resource with the following settings:
     * Name: Enter a unique name.
     * Subscription: Your Azure subscription.
     * Location: Any available location.
-    * Pricing tier: S0
+    * Pricing tier: Free F0
     * Resource group: Create a resource group with a unique name.
 
 1. Deployment will take a few minutes, but that's okay! We won't need it just yet. Onward to the next step!
