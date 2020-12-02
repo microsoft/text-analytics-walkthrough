@@ -37,7 +37,7 @@ This tutorial assumes you have some knowledge of VS Code, Python, and Jupyter No
 
 ## Setting up Azure Cognitive Services
 If you're new to Cognitive Services, here's what you'll need to do to get set up.
-You will need a Microsoft Azure subscription. you do not already have one, set up a Microsoft Azure subscription. You can sign up for a free trial at: https://azure.microsoft.com/free 
+You will need a Microsoft Azure subscription. If you do not already have one, set up a Microsoft Azure subscription. You can sign up for a free trial at: https://azure.microsoft.com/free 
 
 ## Step 1: Set up an Azure Text Analytics resource
 If you don't already have one, use the following steps to create a Cognitive Services resource in your Azure subscription:
