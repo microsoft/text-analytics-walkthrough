@@ -13,7 +13,7 @@ The notebook provides context about the Cognitive Services Python SDK and troubl
 Doing this kind of text analysis can reduce time and energy required to understand long, open-form text. It can also highlight trends that might otherwise be overlooked. 
 
 **Possible applications**
-* Open-form survey responses (what this notebook was originally designed for)
+* Open-form survey responses
 * Customer reviews
 * Social media comment analysis 
 
