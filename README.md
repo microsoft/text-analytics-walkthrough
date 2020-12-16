@@ -13,20 +13,16 @@ The notebook provides context about the Cognitive Services Python SDK and troubl
 Doing this kind of text analysis can reduce time and energy required to understand long, open-form text. It can also highlight trends that might otherwise be overlooked. 
 
 **Possible applications**
-* Open-form survey responses (what this notebook was originally designed for)
+* Open-form survey responses
 * Customer reviews
 * Social media comment analysis 
 
 ### Cost Overview
-Costs resulting from using Cognitive Services Text Analytics are low (<$1). However, using virtual machines (VMs) can increase costs dramatically (between $50 and $75 per month). 
+Cognitive Services Text Analytics offers a free tier that include up to 5000 tansactions per month. However, using virtual machines (VMs) can incur signifcant costs (between $50 and $75 per month). 
 
 To keep the cost of this example as low as possible, we'll run the Cognitive Services client and all of our code locally using [VS Code](https://code.visualstudio.com/Download) and the Python extension. 
 
-To avoid any surprise costs in the future, when you're done with analysis, remember to **stop the Compute engine and delete the resource group.**
-
-* **Estimated cost for running this example:** <$3
-
-* **Estimated cost for doing your own analysis:** <$10
+To avoid any surprise costs in the future, when you're done with analysis, remember to **delete the resource group.**
 
 ### What's in the repo:
 * text-analytics-notebook.ipynb: A Jupyter notebook that contains explanatory text and code blocks that will walk you through setting up and using Azure Cognitive Services
@@ -41,55 +37,25 @@ This tutorial assumes you have some knowledge of VS Code, Python, and Jupyter No
 
 ## Setting up Azure Cognitive Services
 If you're new to Cognitive Services, here's what you'll need to do to get set up.
-You will need a Microsoft Azure subscription. you do not already have one, set up a Microsoft Azure subscription. You can sign up for a free trial at: https://azure.microsoft.com/free 
+You will need a Microsoft Azure subscription. If you do not already have one, set up a Microsoft Azure subscription. You can sign up for a free trial at: https://azure.microsoft.com/free 
 
-### Step 1: Set up Azure Machine Learning
-
-2. If you already have an Azure Machine Learning workspace, navigate to Azure Machine Learning studio and sign in. Otherwise, follow these steps to create a new workspace:
-    1. Sign into the Azure portal using the Microsoft account associated with your Azure subscription.
-    2. Select **＋Create a resource**, search for **Machine Learning**, and create a new Machine Learning resource with the following settings:
-        * **Workspace Name**: enter a unique name that gives some info on what you're using the service for
-        * **Subscription**: choose your Azure subscription
-        * **Resource group**: create a new resource group with a unique name
-        * **Location**: choose any available location
-    3. It takes a few minutes for the workspace resource to be created. When it's done, click tne new **"Go to resource"** button and click **"Launch Now"** to open the Azure Machine Learning ("ML") studio (or go to: https://ml.azure.com). 
-
-    4. In ML Studio, click the ☰ icon at the top left to view menu options. You can use these pages to manage the resources in your workspace. 
-    
-        We'll be using two of these pages for this project: 
-        * **Notebooks**, which is where we'll load and run our Jupyter notebook, and 
-        * **Computer**, which is where we'll set up the machine learning compute engine.
-
-[TO DO: INSERT SCREENSHOT]
-
-## Step 2: Create an Azure Machine Learning compute instance
-
-To run the Jupyter notebook, you will need a compute instance in your Azure Machine Learning workspace. If you already have one, start it; otherwise, follow these instructions to create one:
-
-1. In Azure Machine Learning studio, go to the Compute menu option (under Manage near the bottom).
-2. On the Compute Instances tab, click "Create" to create a new compute instance. Input the following settings:
-    * **Compute name:** enter a unique name
-    * **Virtual Machine type:** CPU
-    * **Virtual Machine size:** Standard_DS11_v2
-3. It takes a few minutes for the compute instance to start. While we wait, let's go to the next step!
-
-## Step 3: Set up an Azure Cognitive Services resource
+## Step 1: Set up an Azure Text Analytics resource
 If you don't already have one, use the following steps to create a Cognitive Services resource in your Azure subscription:
 
 1. In another browser tab, open the Azure portal at: https://portal.azure.com
-2. Click the **＋Create a resource button**, search for Cognitive Services, and create a Cognitive Services resource with the following settings:
+1. Click the **＋Create a resource button**, search for Text Analytics, and create a Cognitive Services resource with the following settings:
     * Name: Enter a unique name.
     * Subscription: Your Azure subscription.
     * Location: Any available location.
-    * Pricing tier: S0
+    * Pricing tier: Free F0
     * Resource group: Create a resource group with a unique name.
 
-3. Deployment will take a few minutes, but that's okay! We won't need it just yet. Onward to the next step!
+1. Deployment will take a few minutes, but that's okay! We won't need it just yet. Onward to the next step!
 
-## Step 4: Open the text-analytics-walkthrough notebook in VS Code and run through the code blocks!
+## Step 2: Open the text-analytics-walkthrough notebook in VS Code and run through the code blocks!
 
 1. Open the *text-analytics-notebook.ipynb* notebook in the **text-analytics-walkthrough** folder. 
-2. Read through the notebook and run the code blocks as you go.
+1. Read through the notebook and run the code blocks as you go.
 
 ## Aside: Tracking expenses and setting a budget
 
