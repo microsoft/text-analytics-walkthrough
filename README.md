@@ -25,7 +25,7 @@ To keep the cost of this example as low as possible, we'll run the Cognitive Ser
 To avoid any surprise costs in the future, when you're done with analysis, remember to **delete the resource group.**
 
 ### What's in the repo:
-* text-analytics-notebook.ipynb: A Jupyter notebook that contains explanatory text and code blocks that will walk you through setting up and using Azure Cognitive Services
+* text-analytics-notebook.ipynb: A Jupyter notebook that contains explanatory text and code blocks that will walk you through setting up and using Azure Text Analytics
 * TextFiles folder: Sample text files for you to run
 * Images: Screenshots and other supporting images for the Jupyter notebook.
 
@@ -36,11 +36,10 @@ This tutorial assumes you have some knowledge of VS Code, Python, and Jupyter No
 1. [Using Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/python/jupyter-support)
 
 ## Setting up Azure Cognitive Services
-If you're new to Cognitive Services, here's what you'll need to do to get set up.
-You will need a Microsoft Azure subscription. If you do not already have one, set up a Microsoft Azure subscription. You can sign up for a free trial at: https://azure.microsoft.com/free 
+If you're new to Cognitive Services, you'll need a Microsoft Azure subscription. If you do not already have one, you can sign up for a free trial at: https://azure.microsoft.com/free 
 
 ## Step 1: Set up an Azure Text Analytics resource
-If you don't already have one, use the following steps to create a Cognitive Services resource in your Azure subscription:
+If you don't already have one, use the following steps to create a Text Analytics resource in your Azure subscription:
 
 1. In another browser tab, open the Azure portal at: https://portal.azure.com
 1. Click the **＋Create a resource button**, search for Text Analytics, and create a Cognitive Services resource with the following settings:
