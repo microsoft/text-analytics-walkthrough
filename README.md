@@ -49,11 +49,11 @@ If you don't already have one, use the following steps to create a Text Analytic
     * Pricing tier: Free F0
     * Resource group: Create a resource group with a unique name.
 
-1. Deployment will take a few minutes, but that's okay! We won't need it just yet. Onward to the next step!
+1. Deployment will take a few minutes, but that's okay! We won't need it just yet. Onward Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Processto the next step!
 
 ## Step 2: Open the text-analytics-walkthrough notebook in VS Code and run through the code blocks!
 
-1. Open the *text-analytics-notebook.ipynb* notebook in the **text-analytics-walkthrough** folder. 
+1. Open the *text-analytics-notebook.ipynb* notebook. 
 1. Read through the notebook and run the code blocks as you go.
 
 ## Aside: Tracking expenses and setting a budget
